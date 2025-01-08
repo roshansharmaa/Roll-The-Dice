@@ -1,0 +1,240 @@
+body {
+  margin: 20px 5px 0px 5px;
+  display: grid;
+  /* justify-content: center; */
+  grid-template-columns: 1fr;
+}
+
+.centerldiv {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* flex-direction: column; */
+}
+
+.playtime {
+  max-width: 768px;
+  background: #242d33;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.score p {
+  font-size: 1.5rem;
+}
+
+.score h1 {
+  font-size: 2.5rem;
+}
+
+nav {
+  margin-top: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+
+
+}
+
+.btn {
+  height: 50px;
+  width: 50px;
+  font-weight: 800;
+
+}
+
+.btn:hover {
+  background: #000;
+  color: white;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: end;
+}
+
+.xp {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: .8rem;
+}
+
+.new {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.new h4 {
+  margin: 0;
+  margin-top: 5px;
+
+}
+
+.main_img {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+.main_img img {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.game_btn {
+
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 20px auto 0;
+}
+
+.game_btn button {
+  height: 30px;
+  font-weight: 700;
+  font-size: 1.2rem;
+
+  &&:hover {
+    background-color: #242424;
+    color: white;
+  }
+}
+
+
+.result-Section {
+  background: #343434;
+  margin-top: 20px;
+  max-width: 230px;
+  border-radius: 10px;
+  margin: 10px auto 15px;
+}
+
+.result {
+  text-align: center;
+
+}
+
+.result2 {
+  text-align: center;
+  margin-top: 0px;
+
+}
+
+.result2 h1,h2{ 
+  margin: 0;
+}
+
+.result h1,
+h3 {
+  margin: 0;
+}
+
+
+
+
+.shake {
+  display: inline-block;
+  /* Ensure the element can be transformed */
+  animation: shake 0.5s 20ms;
+  /* Apply the shake animation */
+  animation-duration: .8s;
+  /* Total duration for the animation */
+  color: red;
+  font-size: 1.5rem;
+}
+
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  10% {
+    transform: translateX(-10px);
+  }
+
+  20% {
+    transform: translateX(10px);
+  }
+
+  30% {
+    transform: translateX(-10px);
+  }
+
+  40% {
+    transform: translateX(10px);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  60% {
+    transform: translateX(10px);
+  }
+
+  70% {
+    transform: translateX(-10px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  90% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width:768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    height: 100px;
+    align-items: center;
+
+
+  
+  }
+
+  .btn {
+    height: 40px;
+    width: 40px;
+
+    &&:hover {
+      background: #242424;
+      color: white;
+    }
+  }
+
+  .centerldiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .xp {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: .8rem;
+  }
+}
